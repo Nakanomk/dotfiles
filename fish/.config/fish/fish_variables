@@ -1,0 +1,4 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR __fish_initialized:4300
+SETUVAR fish_user_paths:/home/nakanosan/\x2eyarn/bin\x1e/home/nakanosan/\x2elocal/share/npm\x2dglobal/bin
