@@ -1,2 +1,8 @@
 // DMS Window Rules - Managed by DankMaterialShell
 // Do not edit manually - changes may be overwritten
+
+// @id=wr_1778112459263961444 @name=org.gnome.Evince
+window-rule {
+    match app-id="^org.gnome.Evince$"
+    opacity 0.80
+}
