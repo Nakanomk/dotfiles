@@ -1,0 +1,23 @@
+#!/bin/bash
+
+killall awww-daemon
+
+awww-daemon &
+awww-daemon -n overview &
+
+sleep 1
+
+# 读取记录的壁纸路径
+if [ -f ~/.config/niri/current_wallpaper.txt ]; then
+  LAST_WALL=$(cat ~/.config/niri/current_wallpaper.txt)
+  BLURRED_PATH="$HOME/.cache/niri_overview_blur.jpg"
+
+  # 【关键修改】：不再调用 set_wall.sh，而是直接用 awww 贴图
+  # 并且强制加上 --transition-type none (无动画)
+  awww img "$LAST_WALL" --transition-type none
+
+  # 检查是否生成过模糊壁纸，如果有，直接瞬间贴上
+  if [ -f "$BLURRED_PATH" ]; then
+    awww img -n overview "$BLURRED_PATH" --transition-type none
+  fi
+fi

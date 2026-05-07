@@ -1,0 +1,8 @@
+#!/bin/bash
+mkdir Courseware
+mkdir Note
+mkdir Document
+mkdir Exam
+mkdir Homework
+touch README.md
+echo "# New Course" >./README.md

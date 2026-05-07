@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Nknsw stands for nakanosan's working mode.
+
+killall -9 qq
+killall -9 wechat

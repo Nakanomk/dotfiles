@@ -1,0 +1,3 @@
+#!/bin/bash
+cd /home/nakanosan/Documents/大学/Weizhujiao/yatm-1.4.0/yatm-1.4.0/
+yarn start
