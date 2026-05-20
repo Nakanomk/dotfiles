@@ -4,8 +4,8 @@ return {
 		priority = 1000,
 		config = function()
 			require('base16-colorscheme').setup({
-				base00 = '#121318',
-				base01 = '#121318',
+				base00 = '#11131c',
+				base01 = '#11131c',
 				base02 = '#999ba5',
 				base03 = '#999ba5',
 				base04 = '#eff1ff',
@@ -14,12 +14,12 @@ return {
 				base07 = '#f8f9ff',
 				base08 = '#ff9fb7',
 				base09 = '#ff9fb7',
-				base0A = '#c3cbff',
+				base0A = '#c4ccff',
 				base0B = '#a5ffb4',
 				base0C = '#dfe3ff',
-				base0D = '#c3cbff',
-				base0E = '#ced4ff',
-				base0F = '#ced4ff',
+				base0D = '#c4ccff',
+				base0E = '#ced5ff',
+				base0F = '#ced5ff',
 			})
 
 			vim.api.nvim_set_hl(0, 'Visual', {
@@ -28,14 +28,14 @@ return {
 				bold = true
 			})
 			vim.api.nvim_set_hl(0, 'Statusline', {
-				bg = '#c3cbff',
-				fg = '#121318',
+				bg = '#c4ccff',
+				fg = '#11131c',
 			})
 			vim.api.nvim_set_hl(0, 'LineNr', { fg = '#999ba5' })
 			vim.api.nvim_set_hl(0, 'CursorLineNr', { fg = '#dfe3ff', bold = true })
 
 			vim.api.nvim_set_hl(0, 'Statement', {
-				fg = '#ced4ff',
+				fg = '#ced5ff',
 				bold = true
 			})
 			vim.api.nvim_set_hl(0, 'Keyword', { link = 'Statement' })
@@ -43,11 +43,11 @@ return {
 			vim.api.nvim_set_hl(0, 'Conditional', { link = 'Statement' })
 
 			vim.api.nvim_set_hl(0, 'Function', {
-				fg = '#c3cbff',
+				fg = '#c4ccff',
 				bold = true
 			})
 			vim.api.nvim_set_hl(0, 'Macro', {
-				fg = '#c3cbff',
+				fg = '#c4ccff',
 				italic = true
 			})
 			vim.api.nvim_set_hl(0, '@function.macro', { link = 'Macro' })
