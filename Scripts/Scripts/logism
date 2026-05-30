@@ -1,1 +1,2 @@
+export _JAVA_AWT_WM_NONREPARENTING=1
 java -jar ~/Downloads/logisim-generic-2.7.1_TRP汉化版.jar
